@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Account Operations</title>
+    <style>
+        body {
+            background-image: url('image/baank.jpg');
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, sans-serif;
+            text-transform: capitalize;
+            color: pink;
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        h1 {
+            color: blue;
+        }
+
+        h2 {
+            color: black;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin: 10px 0;
+        }
+
+        a {
+            color: pink;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px 20px;
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        a:hover {
+            background-color: pink;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+   
+    <h1>Login Success</h1>
+    <h2>Account Operations</h2>  
+    
+    <ul>
+        <li><a href='Create.html'>Create Account</a></li>
+        <li><a href='Display.html'>Display Details</a></li>
+        <li><a href='Deposit.html'>Deposit</a></li>
+        <li><a href='Withdraw.html'>Withdraw</a></li>
+        <li><a href='#' onclick="logout()">Logout</a></li>
+    </ul>
+    
+    <script>
+        function logout() {
+            // Assuming you're using a session mechanism on the server-side to manage user state
+            // Here, we'll simply redirect to the login/register page
+            window.location.href = 'Login.html';
+        }
+    </script>
+</body>
+</html>

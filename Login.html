@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>login Account</title>
+    <style>
+        body {
+            background-image: url('image/baank.jpg');
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, sans-serif;
+            text-transform: capitalize;
+            color: pink;
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h2 {
+            margin-top: 0;
+            text-align: center;
+            width: 100%;
+        }
+
+        form {
+            padding: 20px;
+            text-align: left;
+          /*  background-color: rgba(0, 0, 0, 0.5);  Added a semi-transparent background for better readability */
+            border-radius: 10px;
+            color: white;
+        }
+
+        label, input {
+            display: block;
+            margin-bottom: 10px;
+            width: 100%;
+        }
+
+        input[type="text"], input[type="submit"] {
+            padding: 8px;
+            font-size: 16px;
+            border-radius: 5px;
+            border: none;
+        }
+
+        input[type="submit"] {
+            background-color: pink;
+            color: black;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+	<form action="LoginServlet" method="post">
+		<label>Enter User name :</label>
+		<br/>
+		<input type="text" name="uname"/>
+		<br/>
+		
+		<label>Enter Password :</label>
+		<br/>
+		<input type="password" name="pwd"/>
+		<br/>
+		
+		<input type="submit" value = "Login"/>
+		
+	</form>
+	<div>Not yet Registered? <a href="Register.html"> Register </a> Now</div>
+</body>
+</html>

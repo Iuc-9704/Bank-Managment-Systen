@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Create Account</title>
+    <style>
+        body {
+            background-image: url('image/baank.jpg');
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, sans-serif;
+            text-transform: capitalize;
+            color: pink;
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        form {
+            padding: 20px;
+            text-align: left;
+            background-color: rgba(0, 0, 0, 0.5); /* Added a semi-transparent background for better readability */
+            border-radius: 10px;
+            color: white;
+        }
+
+        label, input {
+            display: block;
+            margin-bottom: 10px;
+            width: 100%;
+        }
+
+        input[type="text"], input[type="password"], input[type="submit"] {
+            padding: 8px;
+            font-size: 16px;
+            border-radius: 5px;
+            border: none;
+        }
+
+        input[type="submit"] {
+            background-color: pink;
+            color: black;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <form action="RegisterServlet" method="post">       
+        <label for="uname">Enter User Name:</label>
+        <input type="text" id="uname" name="uname"/>
+        
+        <label for="pwd">Enter Password:</label>
+        <input type="password" id="pwd" name="pwd"/>
+        
+        <label for="cnfm">Confirm Password:</label>
+        <input type="password" id="cnfm" name="cnfm"/>
+        
+        <input type="submit" value="Register"/>
+    </form>
+</body>
+</html>
